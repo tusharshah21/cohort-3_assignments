@@ -7,11 +7,18 @@
     <title>Grid Layout</title>
     <style>
         .container {
-            width: 1200px;
+            width: 100%;
+            max-width: 1200px;
             margin: 0 auto;
             display: grid;
             grid-template-columns: 1fr 2fr;
-            gap: 10px;
+            height: 100vh;
+        }
+
+        .left, .right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .left {
@@ -21,6 +28,7 @@
         .right {
             background-color: blue;
         }
+        
     </style>
 </head>
 
