@@ -21,6 +21,7 @@
 
         .right {
             background-color: blue;
+            vertical-align: middle;
         }
         .vertical-center {
             display: flex;
@@ -30,10 +31,20 @@
         }
         .horizontal-center {
             margin: 0 auto;
+            align-items: center;
+            justify-content: center;
+            display: flex;
         }
         .grid1 {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
+        }
+        .grid2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        h2 {
+            text-align: center;
         }
     </style>
 </head>
@@ -45,11 +56,20 @@
                 <div class="horizontal-center">
                     <h1>Left</h1>
                 </div>
-                <div>
-                    <h3>
-                    text text text text text text text text text text text text text
-                    </h3>
-                </div>
+                <div class="grid2">
+                <h2>text</h2>
+                <h2>text</h2>
+                <h2>text</h2>
+                <h2>text</h2>
+                <h2>text</h2>
+                <h2>text</h2>
+                <h2>text</h2>
+                <h2>text</h2>
+                <h2>text</h2>
+                <h2>text</h2>
+                <h2>text</h2>
+                <h2>text</h2>
+            </div>
             </div>
         </div>
         <div class="right">
